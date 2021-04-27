@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="connectionFTP_MedalliaMaestro"
+  DTS:DTSID="{1315277A-8AA4-4671-A27A-210D1EFC74FD}"
+  DTS:CreationName="FTP">
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::ConnectionFTP_MedalliaMaestro_ServerName]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPassword">@[$Project::ConnectionFTP_MedalliaMaestro_ServerPassword]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPort">@[$Project::ConnectionFTP_MedalliaMaestro_ServerPort]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerUserName">@[$Project::ConnectionFTP_MedalliaMaestro_ServerUserName]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="10.1.32.135:21">
+      <DTS:FtpConnection
+        DTS:ServerName="10.1.32.135"
+        DTS:ServerUserName="medallia_mae_pe"
+        DTS:UsePassiveMode="False">
+        <DTS:Property
+          DTS:Name="ServerPassword"
+          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuesaLZexSkebkckmH8xSLQAAAAACAAAAAAAQZgAAAAEAACAAAABvoJGxWw9LQer3JnKEEb0yGKco8cxbBbGzynxZbTo6zwAAAAAOgAAAAAIAACAAAAD/TPp+p6rZGuhg86C1zP6uqdpwLJRY3JgVaK1aYUMQeZAAAABUZXv3RON3GRkKUPzduFdYoRLe/NDm0jqtLfvVVIt3ZaTNsPXSapPJQBOuumGWN6fTjQgk8iSOUPh75T6Iapdit9LQhnmxs9o4Nr8+Zl1V/YtREiIpxXuQso/9IdvJEoccWlCahjsN6GgR2LdcfUfkwNfElogkhpF5qcbAeNHcpaTifg0HAXCqEKAz24EycCZAAAAAPnUEYgi+R0Mz4hVweDw/KbTwm1kdAtGAp0ovYdzxeiH3LOGCAzKxtKSE9/J6J8aSMutHDa0jxXBfXIElsDFAog==</DTS:Property>
+      </DTS:FtpConnection>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

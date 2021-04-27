@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="connectionFTP_Sod12"
+  DTS:DTSID="{2563D281-FD72-4E62-9D6C-D45930825751}"
+  DTS:CreationName="FTP">
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::ConnectionFTP_Sod12_ServerName]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPassword">@[$Project::ConnectionFTP_Sod12_ServerPassword]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPort">@[$Project::ConnectionFTP_Sod12_ServerPort]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerUserName">@[$Project::ConnectionFTP_Sod12_ServerUserName]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="sod12:21">
+      <DTS:FtpConnection
+        DTS:ServerName="sod12"
+        DTS:ServerUserName="sodimac">
+        <DTS:Property
+          DTS:Name="ServerPassword"
+          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuesaLZexSkebkckmH8xSLQAAAAACAAAAAAAQZgAAAAEAACAAAAATtbbLrnv1GiMldTxmCg8c6/Ecymsc6UYdq7gBzkXqsAAAAAAOgAAAAAIAACAAAADgP1SG6zmU1HAgkb4TCnSbHrkJRnnTExOseyVuTo1adYAAAAC9jusPtyn721Aa0B0AC7/vqfwPadJv75p5hq0O6/8cS1EjoRETxfG4cHQoniRZ/vsHo0+pwiMbNEEnkpPqC531TfX31Eh2pcGYIAejshyIl9w6WqblwSlEF10NFf3dCJ5dsHosOxpkQtED1EPpYqoKQOs2KDflKR6k10bJU0e+E0AAAACzsM8EK+tQy8Ha6I4UTnJ9m/oVnYOTGeFfkZjF6iLUwebWl22aY7wICjC4++iLhd1OGboQ18yHzQxPkmkWzSaQ</DTS:Property>
+      </DTS:FtpConnection>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

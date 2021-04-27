@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="connectionBDSodimacProd"
+  DTS:DTSID="{3F1D4A6E-97AA-40D4-BCF1-C2C838B74BD2}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::ConnectionBDSodimacProd_InitialCatalog]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::ConnectionBDSodimacProd_Password]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::ConnectionBDSodimacProd_ServerName]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::ConnectionBDSodimacProd_UserName]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=CL-SQL2016PROD;User ID=ucx_rrpp;Initial Catalog=BDSodimacProd;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuesaLZexSkebkckmH8xSLQAAAAACAAAAAAAQZgAAAAEAACAAAAAyMunjCeQ1rocIkyC+tSwowdPeK1pRFevI7MbIhZe04AAAAAAOgAAAAAIAACAAAADMpWzAco1s0i6n7a+MJYJB+OIsJ+jiLrz7epScC1SGK4AAAAC0FbPty0XDkq/b1Y8x7ER0li5Nsne6hdEsvJ2ooUUqDyJ+C+/Fg4hKg4PTA0vG4mcEnXb8r6NAKeiaRpToVyFHzw3qYAm0cKrtCSvBcHY4WDl2WcRu4mjRb+5x3D878VbjuAUBFAw2MWbr9mcICaek2ZnTnoLZah0FKlLF8HSbI0AAAACzy18bBFTBr8nPkZ0kMjCdNB+ivEToisX/MiB5NfhzJMreacerHZjI5Hn5TsBRHV1oaJfgZojdEY3ZPDlYWoib</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
